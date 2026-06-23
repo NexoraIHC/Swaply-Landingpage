@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#8B1A2B">
+  <title>US18 · Rechazar solicitud — Swaply</title>
+  <link rel="stylesheet" href="assets/styles/app.css">
+  <style>
+    .motivo-row {
+      display: flex; align-items: center; gap: 12px;
+      padding: 13px 0; border-bottom: 1px solid var(--soft); cursor: pointer;
+      font-size: 13px;
+    }
+    .motivo-row:last-child { border-bottom: none; }
+    .motivo-radio {
+      width: 20px; height: 20px; border-radius: 50%;
+      border: 2px solid #ccc; background: #fff; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center; transition: all .15s;
+    }
+    .motivo-row.selected .motivo-radio { border-color: var(--primary); background: var(--primary); }
+    .motivo-row.selected .motivo-radio::after { content: ''; width: 8px; height: 8px; border-radius: 50%; background: #fff; }
+  </style>
+</head>
+<body class="app-body" data-screen-id="us18">
+  <div class="app-shell">
+    <aside id="appSidebar" class="app-sidebar"></aside>
+    <div class="app-main">
+      <header class="app-topbar" id="appTopbar">
+        <button type="button" id="btnSettings" style="background:none;border:none;font-size:20px;cursor:pointer;padding:0 8px;color:var(--primary);">⚙️</button>
+        <span class="app-topbar-title" id="screenTitle">US18 · Rechazar solicitud</span>
+        <button type="button" class="hu-toggle" id="huToggle">50 HU</button>
+      </header>
+      <div class="app-viewport">
+        <div class="app-frame" id="appFrame" role="main">
+          <div class="bar"><span>12:30</span><span class="icons">▲▼ ⋯⋯⋯</span></div>
+          <div class="scr" style="display:flex; flex-direction:column; height:100%;">
+            <div class="head"><span class="back">‹</span><h2>Rechazar solicitud</h2></div>
+
+            <div style="font-size:12px; color:var(--muted); margin-bottom:16px; line-height:1.5;">
+              El aprendiz será notificado para que pueda buscar otro tutor.
+            </div>
+
+            <!-- Motivo -->
+            <div style="font-size:11px; font-weight:700; color:var(--primary); text-transform:uppercase; letter-spacing:.05em; margin-bottom:4px;">Motivo (opcional)</div>
+
+            <div id="us18-motivos">
+              <div class="motivo-row selected" data-val="No tengo disponibilidad esta semana">
+                <div class="motivo-radio"></div>
+                <span>No tengo disponibilidad esta semana</span>
+              </div>
+              <div class="motivo-row" data-val="El tema no es mi especialidad">
+                <div class="motivo-radio"></div>
+                <span>El tema no es mi especialidad</span>
+              </div>
+              <div class="motivo-row" data-val="Otro motivo">
+                <div class="motivo-radio"></div>
+                <span>Otro motivo</span>
+              </div>
+            </div>
+
+            <!-- Mensaje adicional -->
+            <div style="margin-top:16px;">
+              <div style="font-size:11px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px;">Mensaje al aprendiz</div>
+              <textarea id="us18-msg" placeholder="Hola, esta semana estoy en parciales…" style="width:100%; box-sizing:border-box; height:72px; padding:10px 12px; font-size:13px; border:1.5px solid var(--soft); border-radius:10px; resize:none; font-family:inherit; outline:none;"></textarea>
+            </div>
+
+            <div style="flex:1;"></div>
+
+            <!-- Botones -->
+            <div style="display:flex; gap:10px; padding-bottom:8px;">
+              <button type="button" id="btn-us18-cancelar" style="flex:1; padding:14px; border:1.5px solid var(--primary); background:transparent; color:var(--primary); border-radius:10px; font-weight:700; font-size:14px; cursor:pointer;">Cancelar</button>
+              <button type="button" id="btn-us18-confirmar" style="flex:1; padding:14px; background:#C9A227; color:#fff; border:none; border-radius:10px; font-weight:700; font-size:14px; cursor:pointer;">Confirmar rechazo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/screens-data.js"></script>
+  <script src="assets/js/app-meta.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
