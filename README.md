@@ -1,1 +1,1 @@
-# Swaply-Landingpage
+# Swaply
