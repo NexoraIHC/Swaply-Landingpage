@@ -48,9 +48,11 @@ img { max-width: 100%; display: block; }
 }
 .landing-nav a {
   font-size: 15px; font-weight: 500; color: var(--ink2);
-  transition: color .2s;
+  padding: 6px 14px; border-radius: 8px;
+  transition: background .2s, color .2s;
 }
-.landing-nav a:hover, .landing-nav a.active { color: var(--primary); }
+.landing-nav a:hover { background: #f1f5f9; color: var(--ink); }
+.landing-nav a.active { background: #f1f5f9; color: var(--ink); font-weight: 600; }
 .header-actions { display: flex; align-items: center; gap: 12px; }
 .btn-ghost {
   padding: 8px 18px; border-radius: 8px; font-size: 14px; font-weight: 600;
