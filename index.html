@@ -2,10 +2,492 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=public/index.html">
-  <title>Swaply</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swaply — Aprende enseñando, enseña aprendiendo</title>
+  <link rel="stylesheet" href="assets/styles/landing.css">
 </head>
-<body>
+<body class="landing">
+
+  <!-- NAV -->
+  <header class="landing-header" id="inicio">
+    <a href="index.html" class="logo-swaply">
+      <img src="assets/images/logo.jpg" alt="Swaply">
+      Swaply
+    </a>
+    <nav class="landing-nav">
+      <a href="#inicio" class="active">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#soporte">Contacto</a>
+    </nav>
+    <div class="header-actions">
+      <a href="admin-login.html" class="icon-btn" aria-label="Admin" title="Acceso administrador" style="text-decoration:none;">🛡</a>
+      <a href="app.html" class="btn-ghost">Iniciar sesión</a>
+      <a href="app.html" class="btn-app">Entrar a la app</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span>NUEVO</span> Plataforma universitaria v2.0
+          </div>
+          <h1>"Aprende enseñando,<br>enseña <em>aprendiendo</em>"</h1>
+          <p>Conecta con tutores verificados de tu universidad. Gana créditos enseñando y úsalos para recibir tutorías. Seguro, accesible y hecho para estudiantes peruanos.</p>
+          <div class="hero-ctas">
+            <a href="app.html" class="btn-hero-primary">⚡ Comenzar gratis</a>
+            <a href="#como-funciona" class="btn-hero-outline">Ver cómo funciona →</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <strong>+2 184</strong>
+              <span>Usuarios activos</span>
+            </div>
+            <div class="hero-stat">
+              <strong>412</strong>
+              <span>Sesiones este mes</span>
+            </div>
+            <div class="hero-stat">
+              <strong>4.9 ★</strong>
+              <span>Valoración promedio</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-phone">
+            <img src="assets/images/Aprendiz.jpeg" alt="App Swaply">
+          </div>
+          <div class="hero-card-float">
+            <div class="label">Swaply Dashboard</div>
+            <div class="value">412</div>
+            <div class="sub">Sesiones · S/ 0 costo promedio</div>
+            <div class="hero-bar"><div class="hero-bar-fill"></div></div>
+            <div class="hero-pill">✓ +18% vs mes anterior · ¡Sigue así!</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="inner">
+        <div class="section-header centered">
+          <div class="section-tag">LO QUE OFRECEMOS</div>
+          <h2 class="section-title">Todo lo que necesitas<br>para aprender mejor</h2>
+          <p class="section-sub">Tecnología pensada para estudiantes universitarios que quieren aprender y enseñar de forma segura y efectiva.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feat-card">
+            <div class="feat-icon">🔍</div>
+            <h3>Búsqueda de tutores</h3>
+            <p>Encuentra tutores verificados por curso, universidad y disponibilidad. Filtros avanzados para tu necesidad exacta.</p>
+            <span class="feat-tag">Filtros en tiempo real</span>
+          </div>
+          <div class="feat-card featured">
+            <div class="feat-icon">💬</div>
+            <h3>Chat integrado</h3>
+            <p>Comunícate con tus tutores directamente desde la app. Comparte archivos, imágenes y coordina sesiones sin salir de Swaply.</p>
+            <span class="feat-tag">Mensajes · Archivos · Coordinar</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">⭐</div>
+            <h3>Sistema de créditos HU</h3>
+            <p>Gana créditos enseñando y úsalos para solicitar tutorías. Un ecosistema justo donde todos pueden participar sin barreras económicas.</p>
+            <span class="feat-tag">Intercambio de conocimiento</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">📅</div>
+            <h3>Gestión de sesiones</h3>
+            <p>Agenda, reagenda y lleva el historial de todas tus sesiones. Recordatorios automáticos para que nunca pierdas una clase.</p>
+            <span class="feat-tag">Calendario · Recordatorios</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">🎓</div>
+            <h3>Perfiles universitarios</h3>
+            <p>Perfiles verificados con correo institucional. Sé tutor en lo que dominas y aprendiz en lo que necesitas mejorar.</p>
+            <span class="feat-tag">Verificación institucional</span>
+          </div>
+          <div class="feat-card">
+            <div class="feat-icon">🛡</div>
+            <h3>Reputación y confianza</h3>
+            <p>Calificaciones, reseñas y sistema de reportes para garantizar interacciones de calidad. Tu seguridad es nuestra prioridad.</p>
+            <span class="feat-tag">SSL · Perfiles verificados</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CÓMO FUNCIONA -->
+    <section class="section bg-soft" id="como-funciona">
+      <div class="inner">
+        <div class="section-header">
+          <div class="section-tag">PROCESO SIMPLE</div>
+          <h2 class="section-title">¿Cómo funciona Swaply?</h2>
+        </div>
+        <div class="how-grid">
+          <div class="steps-list">
+            <div class="step">
+              <div class="step-num">1</div>
+              <div class="step-body">
+                <h3>Crea tu cuenta gratis</h3>
+                <p>Regístrate en 2 minutos con tu correo institucional. Sin tarjeta de crédito. Define si eres aprendiz, tutor o ambos.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">2</div>
+              <div class="step-body">
+                <h3>Completa tu perfil</h3>
+                <p>Indica tu universidad, cursos que dominas y tu disponibilidad. Compatible con todas las universidades del Perú.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">3</div>
+              <div class="step-body">
+                <h3>Busca o recibe solicitudes</h3>
+                <p>Encuentra el tutor perfecto o espera solicitudes como tutor. El chat integrado facilita toda la coordinación al instante.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">4</div>
+              <div class="step-body">
+                <h3>Aprende, enseña y crece</h3>
+                <p>Completa sesiones, gana créditos y construye tu reputación. ¡La comunidad promedia 4.9 estrellas de satisfacción!</p>
+              </div>
+            </div>
+          </div>
+          <div class="how-card">
+            <div class="how-card-icon">🎓</div>
+            <h3>Swaply en acción</h3>
+            <p>Más de 2,000 estudiantes universitarios ya aprenden y enseñan en Swaply todos los meses</p>
+            <div class="how-card-stat">
+              <strong>4.9 ★</strong>
+              <span>satisfacción promedio en sesiones</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section class="section" id="nosotros">
+      <div class="inner">
+        <div class="about-grid">
+          <div class="about-text">
+            <div class="section-tag">CONÓCENOS</div>
+            <h2 class="section-title">Somos Swaply</h2>
+            <p>Somos un equipo de estudiantes de Ingeniería de Software de la UPC, apasionados por la educación colaborativa y la tecnología. Nacimos en 2025 con la misión de ayudar a estudiantes universitarios a encontrar apoyo académico confiable y accesible.</p>
+            <p>Creemos que el conocimiento no debería tener barreras económicas. Cualquier estudiante merece poder aprender con quien ya dominó el tema, y enseñar lo que sabe para crecer junto a otros.</p>
+            <div class="mission-box">
+              <div class="label">Nuestra misión</div>
+              <p>Conectar estudiantes universitarios de todo el Perú en una comunidad colaborativa donde enseñar y aprender sean parte de una experiencia dinámica, inclusiva y enriquecedora.</p>
+            </div>
+          </div>
+          <div class="about-stats">
+            <div class="about-stat-card">
+              <strong>2025</strong>
+              <span>Fundación</span>
+            </div>
+            <div class="about-stat-card">
+              <strong>6</strong>
+              <span>Integrantes</span>
+            </div>
+            <div class="about-stat-card">
+              <strong>+2k</strong>
+              <span>Usuarios</span>
+            </div>
+            <div class="about-stat-card">
+              <strong>Perú</strong>
+              <span>Origen</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MISIÓN / VISIÓN -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px; margin-top:60px;">
+          <div style="background:var(--soft); border-radius:16px; padding:32px;">
+            <div style="font-size:28px; margin-bottom:12px;">🎯</div>
+            <h3 style="font-size:18px; font-weight:800; margin-bottom:12px;">MISIÓN</h3>
+            <p style="font-size:14px; color:var(--ink2); line-height:1.7;">Brindar a los estudiantes universitarios una plataforma segura, accesible y colaborativa donde puedan aprender y enseñar entre pares, facilitando el intercambio de conocimientos y fomentando el crecimiento académico y personal.</p>
+          </div>
+          <div style="background:var(--soft); border-radius:16px; padding:32px;">
+            <div style="font-size:28px; margin-bottom:12px;">⭐</div>
+            <h3 style="font-size:18px; font-weight:800; margin-bottom:12px;">VISIÓN</h3>
+            <p style="font-size:14px; color:var(--ink2); line-height:1.7;">Convertirnos en la principal comunidad interuniversitaria de aprendizaje colaborativo en Latinoamérica, transformando la manera en que los estudiantes acceden al apoyo académico basado en confianza e innovación.</p>
+          </div>
+        </div>
+
+        <!-- EQUIPO -->
+        <div style="margin-top:72px; text-align:center;">
+          <h2 class="section-title" style="margin-bottom:48px;">Conoce al equipo</h2>
+          <div class="team-grid">
+            <div class="team-member">
+              <div class="photo"><img src="assets/images/matthias.jpg" alt="Matthias" onerror="this.parentElement.innerHTML='M'"></div>
+              <div class="name">Matthias</div>
+              <div class="role">Team Leader</div>
+            </div>
+            <div class="team-member">
+              <div class="photo"><img src="assets/images/franco.jpeg" alt="Franco" onerror="this.parentElement.innerHTML='F'"></div>
+              <div class="name">Franco</div>
+              <div class="role">Frontend Developer</div>
+            </div>
+            <div class="team-member">
+              <div class="photo"><img src="assets/images/andrei.jpeg" alt="Andrei" onerror="this.parentElement.innerHTML='A'"></div>
+              <div class="name">Andrei</div>
+              <div class="role">Backend Developer</div>
+            </div>
+            <div class="team-member">
+              <div class="photo"><img src="assets/images/Boris.png" alt="Boris" onerror="this.parentElement.innerHTML='B'"></div>
+              <div class="name">Boris</div>
+              <div class="role">UX Designer</div>
+            </div>
+            <div class="team-member">
+              <div class="photo"><img src="assets/images/rogger.jpeg" alt="Rogger" onerror="this.parentElement.innerHTML='R'"></div>
+              <div class="name">Rogger</div>
+              <div class="role">QA Engineer</div>
+            </div>
+            <div class="team-member">
+              <div class="photo"><img src="assets/images/diana.jpeg" alt="Diana" onerror="this.parentElement.innerHTML='D'"></div>
+              <div class="name">Diana</div>
+              <div class="role">Full Stack Developer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="section bg-soft">
+      <div class="inner">
+        <div class="section-header centered">
+          <div class="section-tag">TESTIMONIOS</div>
+          <h2 class="section-title">Miles de estudiantes ya<br>aprenden con Swaply</h2>
+        </div>
+        <div class="testi-grid">
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Gracias a Swaply encontré un tutor de Cálculo en menos de 10 minutos. Pasé de estar repitiendo el curso a aprobar con 16. La plataforma es muy fácil de usar y el sistema de créditos es genial."</blockquote>
+            <div class="testi-author">
+              <div class="testi-av">MG</div>
+              <div class="testi-info">
+                <strong>María García</strong>
+                <span>Lima, Perú · Ingeniería Civil UPC</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"Soy tutor de Programación y ya acumulé suficientes créditos para recibir clases de Estadística. El intercambio de conocimiento funciona perfectamente. Recomendado al 100%."</blockquote>
+            <div class="testi-author">
+              <div class="testi-av">CR</div>
+              <div class="testi-info">
+                <strong>Carlos Ríos</strong>
+                <span>Arequipa, Perú · Sistemas UNSA</span>
+              </div>
+            </div>
+          </div>
+          <div class="testi-card">
+            <div class="testi-stars">★★★★★</div>
+            <blockquote>"El chat integrado me facilita todo. Puedo coordinar horarios, compartir mis apuntes y hacer seguimiento de mis sesiones desde un solo lugar. ¡Es exactamente lo que necesitaba!"</blockquote>
+            <div class="testi-author">
+              <div class="testi-av">AP</div>
+              <div class="testi-info">
+                <strong>Ana Paredes</strong>
+                <span>Trujillo, Perú · Administración UNT</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="inner">
+        <div class="section-header centered">
+          <div class="section-tag">FAQ</div>
+          <h2 class="section-title">Resolvemos tus dudas</h2>
+          <p class="section-sub">¿No encuentras tu respuesta? Escríbenos directamente.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item">
+            <div class="faq-q">¿Swaply es gratuito? <span class="arr">+</span></div>
+            <div class="faq-a">Sí, crear tu cuenta y usar las funciones básicas es completamente gratuito. El sistema de créditos HU permite intercambiar tutorías sin costo monetario.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿Cómo verifican a los tutores? <span class="arr">+</span></div>
+            <div class="faq-a">Los tutores se registran con su correo institucional universitario. Además, pueden subir certificados y el equipo de administración los verifica antes de activar su perfil como tutor avanzado.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿En qué universidades puedo usar Swaply? <span class="arr">+</span></div>
+            <div class="faq-a">Swaply está disponible para estudiantes de cualquier universidad peruana. Basta con tener un correo institucional (@universidad.edu.pe) para registrarte.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿Cómo funciona el sistema de créditos HU? <span class="arr">+</span></div>
+            <div class="faq-a">Ganas créditos HU cuando das tutorías como tutor. Esos créditos los puedes usar para solicitar tutorías como aprendiz. Es un sistema de intercambio justo donde todos ganan.</div>
+          </div>
+          <div class="faq-item">
+            <div class="faq-q">¿Mis datos están seguros? <span class="arr">+</span></div>
+            <div class="faq-a">Sí. Utilizamos cifrado SSL en todas las comunicaciones. Tus datos personales nunca se venden ni se comparten con terceros. Consulta nuestra política de privacidad para más detalles.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section bg-soft" id="soporte">
+      <div class="inner">
+        <div class="section-header">
+          <div class="section-tag">CONTACTO</div>
+          <h2 class="section-title">Escríbenos</h2>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form" onsubmit="return false;">
+            <div class="form-row">
+              <div class="form-group">
+                <label>Nombre <span>*</span></label>
+                <input type="text" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">
+                <label>Apellido</label>
+                <input type="text" placeholder="Tu apellido">
+              </div>
+            </div>
+            <div class="form-group">
+              <label>Correo electrónico <span>*</span></label>
+              <input type="email" placeholder="correo@universidad.edu.pe">
+            </div>
+            <div class="form-group">
+              <label>Asunto</label>
+              <select>
+                <option value="">¿En qué podemos ayudarte?</option>
+                <option>Problema técnico</option>
+                <option>Consulta sobre tutorías</option>
+                <option>Sistema de créditos</option>
+                <option>Otro</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Mensaje <span>*</span></label>
+              <textarea placeholder="Cuéntanos más sobre tu consulta…"></textarea>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" id="terms">
+              <label for="terms">Acepto los <a href="app.html#us48" style="color:var(--primary); text-decoration:underline;">Términos de uso</a> y la Política de privacidad</label>
+            </div>
+            <button type="submit" class="btn-send">Enviar mensaje</button>
+          </form>
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📧</div>
+              <div>
+                <h4>Correo</h4>
+                <p>soporte@swaply.pe</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">💬</div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>+51 999 888 777</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">🕐</div>
+              <div>
+                <h4>Horario</h4>
+                <p>Lun–Vie: 9am – 6pm (Lima GMT-5)</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-info-icon">📍</div>
+              <div>
+                <h4>Ubicación</h4>
+                <p>Lima, Perú</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <div class="cta-banner">
+      <h2>Empieza a aprender hoy</h2>
+      <p>Inicia sesión o crea tu cuenta gratis. Sin tarjeta de crédito, sin compromisos.</p>
+      <div class="cta-btns">
+        <a href="app.html" class="btn-cta-white">Iniciar sesión</a>
+        <a href="app.html" class="btn-cta-outline">Registrarse gratis</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo-swaply">
+          <img src="assets/images/logo.jpg" alt="Swaply" style="height:30px; border-radius:6px;">
+          Swaply
+        </div>
+        <p>Plataforma de aprendizaje colaborativo entre estudiantes universitarios peruanos.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">📷</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="YouTube">▶</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Producto</h4>
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="app.html">Entrar a la app</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Empresa</h4>
+        <ul>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#nosotros">Comunidad</a></li>
+          <li><a href="#soporte">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="app.html#us47">Términos de uso</a></li>
+          <li><a href="app.html#us48">Privacidad</a></li>
+          <li><a href="#">Libro de Reclamaciones</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-copy">
+      <span>© 2026 Swaply · NEXORA. Todos los derechos reservados.</span>
+      <span>Desarrollado por el equipo Swaply · UPC 2025</span>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item.open').forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      });
+    });
+  </script>
+
+</body>
+</html>
+
   <script>window.location.replace('public/index.html');</script>
 </body>
 </html>
