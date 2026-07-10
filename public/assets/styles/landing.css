@@ -62,7 +62,7 @@ img { max-width: 100%; display: block; }
 .btn-ghost:hover { background: var(--primary); color: #fff; }
 .btn-app {
   padding: 9px 20px; border-radius: 8px; font-size: 14px; font-weight: 700;
-  background: var(--primary); color: #fff; border: none; cursor: pointer;
+  background: var(--primary) !important; color: #fff !important; border: none; cursor: pointer;
   transition: background .2s;
 }
 .btn-app:hover { background: var(--primary-dark); }
