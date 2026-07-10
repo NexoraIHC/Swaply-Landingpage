@@ -24,7 +24,7 @@
     <div class="header-actions">
       <a href="admin-login.html" class="icon-btn" aria-label="Admin" title="Acceso administrador" style="text-decoration:none;">🛡</a>
       <a href="app.html" class="btn-ghost">Iniciar sesión</a>
-      <a href="app.html" class="btn-app">Entrar a la app</a>
+      <a href="app.html" class="btn-app" style="background:#fff; color:var(--primary);">Entrar a la app</a>
     </div>
   </header>
 
@@ -88,7 +88,7 @@
             <p>Encuentra tutores verificados por curso, universidad y disponibilidad. Filtros avanzados para tu necesidad exacta.</p>
             <span class="feat-tag">Filtros en tiempo real</span>
           </div>
-          <div class="feat-card featured">
+          <div class="feat-card">
             <div class="feat-icon">💬</div>
             <h3>Chat integrado</h3>
             <p>Comunícate con tus tutores directamente desde la app. Comparte archivos, imágenes y coordina sesiones sin salir de Swaply.</p>
@@ -224,37 +224,42 @@
         <!-- EQUIPO -->
         <div style="margin-top:72px; text-align:center;">
           <h2 class="section-title" style="margin-bottom:48px;">Conoce al equipo</h2>
-          <div class="team-grid">
-            <div class="team-member">
-              <div class="photo"><img src="assets/images/matthias.jpg" alt="Matthias" onerror="this.parentElement.innerHTML='M'"></div>
-              <div class="name">Matthias</div>
-              <div class="role">Team Leader</div>
+          <div class="team-grid-3">
+            <div class="team-card">
+              <div class="team-photo"><img src="assets/images/matthias.jpg" alt="Matthias" onerror="this.parentElement.innerHTML='M'"></div>
+              <div class="team-name">Matthias</div>
+              <div class="team-role">Team Leader</div>
             </div>
-            <div class="team-member">
-              <div class="photo"><img src="assets/images/franco.jpeg" alt="Franco" onerror="this.parentElement.innerHTML='F'"></div>
-              <div class="name">Franco</div>
-              <div class="role">Frontend Developer</div>
+            <div class="team-card">
+              <div class="team-photo"><img src="assets/images/franco.jpeg" alt="Franco" onerror="this.parentElement.innerHTML='F'"></div>
+              <div class="team-name">Franco</div>
+              <div class="team-role">Frontend Developer</div>
             </div>
-            <div class="team-member">
-              <div class="photo"><img src="assets/images/andrei.jpeg" alt="Andrei" onerror="this.parentElement.innerHTML='A'"></div>
-              <div class="name">Andrei</div>
-              <div class="role">Backend Developer</div>
+            <div class="team-card">
+              <div class="team-photo"><img src="assets/images/andrei.jpeg" alt="Andrei" onerror="this.parentElement.innerHTML='A'"></div>
+              <div class="team-name">Andrei</div>
+              <div class="team-role">Backend Developer</div>
             </div>
-            <div class="team-member">
-              <div class="photo"><img src="assets/images/Boris.png" alt="Boris" onerror="this.parentElement.innerHTML='B'"></div>
-              <div class="name">Boris</div>
-              <div class="role">UX Designer</div>
+            <div class="team-card">
+              <div class="team-photo"><img src="assets/images/Boris.png" alt="Boris" onerror="this.parentElement.innerHTML='B'"></div>
+              <div class="team-name">Boris</div>
+              <div class="team-role">UX Designer</div>
             </div>
-            <div class="team-member">
-              <div class="photo"><img src="assets/images/rogger.jpeg" alt="Rogger" onerror="this.parentElement.innerHTML='R'"></div>
-              <div class="name">Rogger</div>
-              <div class="role">QA Engineer</div>
+            <div class="team-card">
+              <div class="team-photo"><img src="assets/images/rogger.jpeg" alt="Rogger" onerror="this.parentElement.innerHTML='R'"></div>
+              <div class="team-name">Rogger</div>
+              <div class="team-role">QA Engineer</div>
             </div>
-            <div class="team-member">
-              <div class="photo"><img src="assets/images/diana.jpeg" alt="Diana" onerror="this.parentElement.innerHTML='D'"></div>
-              <div class="name">Diana</div>
-              <div class="role">Full Stack Developer</div>
+            <div class="team-card">
+              <div class="team-photo"><img src="assets/images/diana.jpeg" alt="Diana" onerror="this.parentElement.innerHTML='D'"></div>
+              <div class="team-name">Diana</div>
+              <div class="team-role">Full Stack Developer</div>
             </div>
+          </div>
+
+          <!-- VIDEO PLACEHOLDER -->
+          <div id="team-video" style="margin-top:56px; border-radius:16px; overflow:hidden; background:#000; aspect-ratio:16/9; max-width:800px; margin-left:auto; margin-right:auto; display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-size:14px;">
+            Video próximamente
           </div>
         </div>
       </div>
@@ -420,8 +425,8 @@
       <h2>Empieza a aprender hoy</h2>
       <p>Inicia sesión o crea tu cuenta gratis. Sin tarjeta de crédito, sin compromisos.</p>
       <div class="cta-btns">
-        <a href="app.html" class="btn-cta-white">Iniciar sesión</a>
-        <a href="app.html" class="btn-cta-outline">Registrarse gratis</a>
+        <a href="app.html" class="btn-hero-outline">Iniciar sesión</a>
+        <a href="app.html" class="btn-hero-primary">⚡ Registrarse gratis</a>
       </div>
     </div>
 
