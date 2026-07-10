@@ -5,6 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Swaply — Aprende enseñando, enseña aprendiendo</title>
   <link rel="stylesheet" href="assets/styles/landing.css">
+  <style>
+    .team-card-hover {
+      background: #fff;
+      border: 1.5px solid #e2e8f0;
+      border-radius: 16px;
+      padding: 32px 20px;
+      text-align: center;
+      cursor: default;
+      transition: border-color .2s, box-shadow .2s, transform .2s;
+    }
+    .team-card-hover:hover {
+      border-color: #8B1A2B;
+      box-shadow: 0 6px 24px rgba(139,26,43,.12);
+      transform: translateY(-3px);
+    }
+  </style>
 </head>
 <body class="landing">
 
@@ -24,7 +40,7 @@
     <div class="header-actions">
       <a href="admin-login.html" class="icon-btn" aria-label="Admin" title="Acceso administrador" style="text-decoration:none;">🛡</a>
       <a href="app.html" class="btn-ghost">Iniciar sesión</a>
-      <a href="app.html" class="btn-app" style="background:#fff; color:var(--primary);">Entrar a la app</a>
+      <a href="app.html" class="btn-app">Entrar a la app</a>
     </div>
   </header>
 
@@ -226,7 +242,7 @@
           <h2 class="section-title" style="margin-bottom:48px;">Conoce al equipo</h2>
           <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:860px; margin:0 auto;">
 
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:32px 20px; text-align:center;">
+            <div class="team-card-hover">
               <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:3px solid #e2e8f0; flex-shrink:0;">
                 <img src="assets/images/matthias.jpg" alt="Matthias" style="width:110px; height:110px; object-fit:cover; object-position:center top; display:block;" onerror="this.outerHTML='<div style=\'width:110px;height:110px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;font-weight:700;\'>M</div>'">
               </div>
@@ -234,7 +250,7 @@
               <div style="font-size:13px; color:#8B1A2B; font-weight:600;">Team Leader</div>
             </div>
 
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:32px 20px; text-align:center;">
+            <div class="team-card-hover">
               <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:3px solid #e2e8f0;">
                 <img src="assets/images/franco.jpeg" alt="Franco" style="width:110px; height:110px; object-fit:cover; object-position:center top; display:block;" onerror="this.outerHTML='<div style=\'width:110px;height:110px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;font-weight:700;\'>F</div>'">
               </div>
@@ -242,7 +258,7 @@
               <div style="font-size:13px; color:#8B1A2B; font-weight:600;">Frontend Developer</div>
             </div>
 
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:32px 20px; text-align:center;">
+            <div class="team-card-hover">
               <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:3px solid #e2e8f0;">
                 <img src="assets/images/andrei.jpeg" alt="Andrei" style="width:110px; height:110px; object-fit:cover; object-position:center top; display:block;" onerror="this.outerHTML='<div style=\'width:110px;height:110px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;font-weight:700;\'>A</div>'">
               </div>
@@ -250,7 +266,7 @@
               <div style="font-size:13px; color:#8B1A2B; font-weight:600;">Backend Developer</div>
             </div>
 
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:32px 20px; text-align:center;">
+            <div class="team-card-hover">
               <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:3px solid #e2e8f0;">
                 <img src="assets/images/Boris.png" alt="Boris" style="width:110px; height:110px; object-fit:cover; object-position:center top; display:block;" onerror="this.outerHTML='<div style=\'width:110px;height:110px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;font-weight:700;\'>B</div>'">
               </div>
@@ -258,7 +274,7 @@
               <div style="font-size:13px; color:#8B1A2B; font-weight:600;">UX Designer</div>
             </div>
 
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:32px 20px; text-align:center;">
+            <div class="team-card-hover">
               <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:3px solid #e2e8f0;">
                 <img src="assets/images/rogger.jpeg" alt="Rogger" style="width:110px; height:110px; object-fit:cover; object-position:center top; display:block;" onerror="this.outerHTML='<div style=\'width:110px;height:110px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;font-weight:700;\'>R</div>'">
               </div>
@@ -266,7 +282,7 @@
               <div style="font-size:13px; color:#8B1A2B; font-weight:600;">QA Engineer</div>
             </div>
 
-            <div style="background:#fff; border:1px solid #e2e8f0; border-radius:16px; padding:32px 20px; text-align:center;">
+            <div class="team-card-hover">
               <div style="width:110px; height:110px; border-radius:50%; overflow:hidden; margin:0 auto 16px; border:3px solid #e2e8f0;">
                 <img src="assets/images/diana.jpeg" alt="Diana" style="width:110px; height:110px; object-fit:cover; object-position:center top; display:block;" onerror="this.outerHTML='<div style=\'width:110px;height:110px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:36px;font-weight:700;\'>D</div>'">
               </div>
@@ -277,8 +293,8 @@
           </div>
 
           <!-- VIDEO -->
-          <div id="team-video" style="margin-top:56px; border-radius:16px; overflow:hidden; background:#000; max-width:800px; margin-left:auto; margin-right:auto; aspect-ratio:16/9; display:flex; align-items:center; justify-content:center; color:rgba(255,255,255,.4); font-size:14px;">
-            Video próximamente
+          <div style="margin-top:56px; border-radius:16px; overflow:hidden; max-width:800px; margin-left:auto; margin-right:auto; aspect-ratio:16/9;">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Cx3OSZ7A5JE" title="Swaply — Video del producto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="display:block; width:100%; height:100%;"></iframe>
           </div>
         </div>
       </div>
